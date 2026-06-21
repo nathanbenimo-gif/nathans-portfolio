@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Nathan's Portfolio</title>
+</head>
+<body>
+    <header class="site-header">
+    <h1>Nathan Benimo</h1>
+    <button id="menu-btn" class="menu-btn">&#9776;</button>
+    <nav class="navbar">
+        <a href="#about" class="nav-links">About</a>
+        <a href="#skills" class="nav-links">Skills</a>
+        <a href="#goals" class="nav-links">Goals</a>
+        <a href="#contact" class="nav-links">Contact</a>
+    </nav>
+    </header>
+    <main>
+    <section id="about" class="about-section page-section">
+        <h2 class="title">About Nathan</h2>
+        <p>Hi, I'm Nathan Benimo. I'm a Web Developer based in Yenagoa Bayelsa.</p>
+        <aside class="fun-fact">
+            <h2>fun fact</h2>
+            <p>i am a really fast learner</p>
+        </aside>
+        <figure class="profile-figure">
+        <img src="/assets/code-img.jpg" alt="image codes">
+        <figcaption>photo of codes</figcaption>
+        </figure>
+    </section>
+    <section id="skills" class="skill-section page-section">
+        <h2 class="title">Skills and Interests</h2>
+        <ul id="skills-list"></ul>
+    </section>
+    <section id="goals" class="goals-section page-section">
+        <h2 class="title">Projects and Goals</h2>
+        <ol class="goals-list">
+            <li>Shoot, edit, and post a video on YouTube</li>
+            <li>code and publish a website like <a href="https://linkedin.com" target="_blank">Visit Linkedin</a></li>
+        </ol>
+    </section>
+    <section id="project" class="project-section page-section">
+        <h2 class="title">Project</h2>
+        <div id="project-grid"></div>
+    </section>  
+    <section id="contact" class="page-section">
+        <h2 class="title">Contact Me</h2>
+        <form id="form"  action="https://formspree.io/f/xlgkpqrg" method="POST">
+            <label for="fname">First name</label><br>
+            <input type="text" id="fname" placeholder="enter your first name" name="fname" class="input-field"><br><br>
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" placeholder="enter your last name" name="lname" class="input-field"><br><br>
+            <label for="email">Email Address</label><br>
+            <input type="email" id="email" placeholder="Enter Your Email Address" name="email" class="input-field"><br><br>
+            <label for="number">Phone Number</label><br>
+            <input type="number" id="number" placeholder="Enter Your Phone Number" name="number" class="input-field"><br><br>
+        <!--what are you contacting me for?-->
+            <label for="source">What Services are You Interested In?</label><br>
+            <select name="source" id="source">
+                <option value="">Choose One</option>
+                <option value="web design">Web Design</option>
+                <option value="portfolio">Portfolio</option>
+                <option value="website">Website</option>
+                <option value="graphic design">Graphic Design</option>
+            </select><br><br>
+        <!--gender-->
+            <p>Select Gender</p>
+            <input type="radio" id="gender1" value="male">
+            <label for="gender1">Male</label><br>
+            <input type="radio" id="gender2" value="female">
+            <label for="gender2">Female</label><br><br>
+            
+        <!--message-->
+            <label for="message">Message</label> 
+            <textarea name="message" id="message" rows="6"></textarea><br>
+            <p id="form-success" class="form-success"></p>
+            <button class="submit-btn" type="submit">Submit</button>
+
+
+        </form>
+
+    </section>
+    <button id="back-to-top" class="back-to-top-btn">Back to Top</button>
+</main>
+<footer class="site-footer">
+        <h3>Benimo Nathan</h3>
+        <p>2026</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
